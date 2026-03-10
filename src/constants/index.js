@@ -177,8 +177,8 @@ BigDataandCloud:[
 
 const experiences = [
   {
-    title: "Data Science (Reserch Assistant)",
-    company_name: "University of Massachusetts Dartmouth",
+    title: "Graduate Research Assistant",
+    company_name: "UMass Dartmouth School for Marine Science and Technology",
     icon: Umass,
     iconBg: "#383E56",
     date: "January 2025 - December 2025",
@@ -235,16 +235,16 @@ const testimonials = [
     testimonial:"University of Massachusetts Dartmouth",
     name: "Masters in Data Science",
     Percentage:"3.7/4",
-    company: "2024 - 2026 | Pursuing",
+    company: " January 2024 - December 2025 | Graduated",
     image:UMD
 
 
   },
   {
-    testimonial:"MIT Art, Desgin and Technology University",
+    testimonial:"Maharashtra Institute of Technology",
     name: "Bachelors in Electronics and Communication Engineering",
     Percentage:"7.57/10",
-    company: "2017 - 2021",
+    company: "August 2017 - July 2021 | Graduated",
     image: MIT,
   },
 ];

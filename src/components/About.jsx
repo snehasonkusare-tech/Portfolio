@@ -47,10 +47,10 @@ const About = () => {
 
           {/* Resume Button */}
           <div className="mt-6 inline-block">
-            <a href="/Sneha_Sonkusare.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Portfolio/Sneha_Sonkusare.pdf" target="_blank" rel="noopener noreferrer">
               <div className="flex items-center bg-gradient-to-r from-[#13132b] to-[#1a1a3d] rounded-full px-6 py-3 shadow-lg shadow-blue-500/50 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl relative overflow-hidden">
                 <div className="absolute left-0 top-0 bottom-0 w-10 bg-white rounded-full flex items-center justify-center shadow-md cursor-pointer">
-                  <a href="/Sneha_Sonkusare.pdf" download>
+                  <a href="/Portfolio/Sneha_Sonkusare.pdf" download>
                     <svg className="w-6 h-6 text-[#6b6bff]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 16v-8m0 8l-4-4m4 4l4-4M4 12a8 8 0 1116 0 8 8 0 01-16 0z"></path>
                     </svg>
