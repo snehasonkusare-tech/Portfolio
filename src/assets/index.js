@@ -33,7 +33,7 @@ import cassandra from "./tech/cassandra.png";
 import Azure from "./tech/Azure.png";
 import AWS from "./tech/AWS.png";
 
-
+import Umass from "./company/Umass.png";
 import Hexa from "./company/Hexa.png";
 import iBase from "./company/iBase.png";
 import Neu from "./company/Neu.png";
@@ -41,6 +41,12 @@ import Neu from "./company/Neu.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import LearnAI from "./LearnAI.png";
+import JobSeeker from "./JobSeeker.png";
+import Chat from "./Chat.png";
+import Bio from "./Bio.png";
+import Business from "./Business.png";
+import Dynamic from "./Dynamic.png";
 import BlinkIt from "./BlinkIt.png";
 import BT from "./BT.mov";
 import FlightPrice from "./FlightPrice.png";
@@ -84,10 +90,17 @@ export {
   ggplot,
   cassandra,
   Java,
+  Umass,
   Hexa,
   iBase,
   Neu,
   carrent,
+  JobSeeker,
+  LearnAI,
+  Bio,
+  Chat,
+  Business,
+  Dynamic,
   BlinkIt,
   FlightPrice,
   BT,

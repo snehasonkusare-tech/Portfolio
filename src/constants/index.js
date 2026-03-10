@@ -28,10 +28,17 @@ import {
   AWS,
   Azure,
   Java,
+  Umass,
   Hexa,
   iBase,
   Neu,
   carrent,
+  LearnAI,
+  Bio,
+  JobSeeker,
+  Chat,
+  Dynamic,
+  Business,
   BlinkIt,
   FlightPrice,
   BT,
@@ -170,29 +177,43 @@ BigDataandCloud:[
 
 const experiences = [
   {
-    title: "Associate Software Engineer",
+    title: "Data Science (Reserch Assistant)",
+    company_name: "University of Massachusetts Dartmouth",
+    icon: Umass,
+    iconBg: "#383E56",
+    date: "January 2025 - December 2025",
+    points: [
+      "Performed EDA on 500K+ oceanographic records, engineered domain-specific features, and trained Random Forest and CNN models (PyTorch/TensorFlow) — achieving 85% accuracy with all experiments tracked via MLflow for full reproducibility.",
+      "Optimized model performance through cross-validation and precision/recall/F1 tuning; translated complex findings into actionable insights for non-technical research teams, directly informing marine conservation decisions.",
+      "Spearheaded metadata standardization and data governance across 5+ research systems — reducing data inconsistencies by 25% and ensuring model reproducibility across both research and IT teams.",
+      "Built and deployed large-scale Apache Spark pipelines for ingestion, preprocessing, and transformation of raw sensor data; collaborated with marine scientists to align model outputs with real-world research needs, improving data accuracy by 20%.",
+    ],
+  },
+  {
+    title: "Data Analyst",
     company_name: "Hexaware Texchnology LTD",
     icon: Hexa,
     iconBg: "#383E56",
     date: "September 2021 - January 2024",
     points: [
-      "Developed and optimized machine learning models for anomaly detection and root cause analysis, improving system efficiency by 40%.",
-      "Designed and implemented function-based and semi-supervised labeling strategies, enhancing predictive model accuracy.",
-      "Led data science initiatives, leveraging Python, SQL, and Spark to analyze large-scale datasets and drive business insights.",
-      "Conducted A/B testing and iterative validation to refine model performance based on real-world feedback.",
-      "Collaborated with cross-functional teams to deploy predictive algorithms into production environments on cloud platforms."
+      "Translated business pain points from finance, operations, and product stakeholders into data solutions by writing complex SQL queries (joins, aggregations, window functions) across 5+ source systems — reducing data errors by 30% and saving 10+ hours of weekly manual corrections.",
+      "Uncovered recurring fraud and credit risk anomalies through EDA and statistical hypothesis testing; deployed Scikit-learn classification models that improved decision accuracy by 25% and maintained 8+ Power BI dashboards cutting report generation time by 35%.",
+      "Defined 15+ KPIs across finance, product, and operations in collaboration with senior stakeholders, enabling self-serve analytics that reduced ad-hoc data requests by 20% and eliminated recurring manual reporting rebuilds.",
+      "Diagnosed and resolved 20+ pipeline failures in Agile cross-functional teams, applying targeted fixes that boosted processing speed by 30% and reduced query runtime by 40% — communicating impact clearly to non-technical stakeholders throughout the process.", 
     ],
   },
   {
-    title: "Software Intern",
+    title: "Operations Data Analyst",
     company_name: "iBase Technologyies",
     icon: iBase,
     iconBg: "#E6DEDD",
-    date: "November 2020 - August 2021",
+    date: "December 2020 - July 2021",
     points: [
-      "Built machine learning models for clustering and classification, enabling actionable insights for business applications.",
-      "Designed scalable MySQL databases, improving query performance and data integrity in production environments.",
-      "Optimized deep learning algorithms in Python, enhancing computational efficiency and predictive performance."
+      "Built and automated end-to-end ETL pipelines integrating multi-source operational data across manufacturing workflows — reducing manual processing time by 40% and ensuring consistent, reliable data flow.",
+      "Optimized SQL databases and query performance for supply chain and operations reporting, achieving 30% faster data retrieval and a 25% boost in overall analytics efficiency.",
+      "Applied K-Means clustering and regression models to analyze production trends, detect anomalies, and support quality control initiatives — improving decision-making accuracy by 20%.",
+      "Designed interactive Power BI dashboards and automated reporting systems tracking KPIs across production, quality control, and supply chain operations, enabling faster and more informed decisions.",
+      "Leveraged statistical analysis and hypothesis testing to evaluate process performance and surface operational inefficiencies, driving measurable improvements in manufacturing strategy and execution.",
     ],
   },
   {
@@ -229,6 +250,90 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+  name: "AI-Powered Learning Platform",
+  description:
+    "Deployed an AI learning platform using LLaMA 3.3 70B and Groq API that generates personalized courses from a single input, featuring 10+ tools including Mock Interview, Quiz Generator, and AI Doubt Solver. Engineered a prompt system consolidating 7 API calls into 1 — reducing generation time by 80% — with a 3-model fallback chain and multilingual support across 12-chapter lessons.",
+  tags: [
+    { name: "LLaMA3.3", color: "blue-text-gradient" },
+    { name: "GroqAPI", color: "green-text-gradient" },
+    { name: "GenerativeAI", color: "pink-text-gradient" },
+    { name: "Python", color: "yellow-text-gradient" },
+    { name: "PromptEngineering", color: "red-text-gradient" },
+  ],
+  image: LearnAI, 
+  source_code_link: "https://snehasonkusare-tech-learnai-app-ot4rox.streamlit.app",
+},
+{
+  name: "Job Market Intelligence & Career Advisor",
+  description:
+    "Built a real-time pipeline that scrapes hundreds of daily job postings, extracts in-demand skills via NLP, and predicts salaries using XGBoost with SHAP explainability. Includes a Personal Career Advisor that takes a user's skillset, predicts their market rate, and recommends the top 3 skills to maximize salary growth — powered by a custom Job Market Health Index (0–100 scale).",
+  tags: [
+    { name: "XGBoost", color: "blue-text-gradient" },
+    { name: "NLP", color: "green-text-gradient" },
+    { name: "SHAP", color: "pink-text-gradient" },
+    { name: "WebScraping", color: "yellow-text-gradient" },
+    { name: "Python", color: "red-text-gradient" },
+  ],
+  image: JobSeeker, 
+  source_code_link: "https://snehasonkusare-tech-job-market-analysis-dashboardapp-pwdwip.streamlit.app",
+},
+{
+  name: "Medical Chatbot | Instruction Fine-Tuning",
+  description:
+    "Production-ready medical chatbot built by instruction fine-tuning LLMs using LoRA/QLoRA with a RAG pipeline backed by Neo4j knowledge graphs — improving response accuracy by 30% and achieving 92% user satisfaction across 500+ beta users. Deployed end-to-end on AWS with real-time latency and drift monitoring, maintaining 99.7% uptime while serving 1,000 concurrent users.",
+  tags: [
+    { name: "LLM", color: "blue-text-gradient" },
+    { name: "LoRA/QLoRA", color: "green-text-gradient" },
+    { name: "RAG", color: "pink-text-gradient" },
+    { name: "Neo4j", color: "yellow-text-gradient" },
+    { name: "AWS", color: "red-text-gradient" },
+  ],
+  image: Chat, 
+  source_code_link: "https://github.com/snehasonkusare-tech/Instruction_Finetuning_Chatbot",
+},
+{
+  name: "AI-Driven Business Intelligence System",
+  description:
+    "Engineered an end-to-end BI pipeline ingesting SQL data, applying Pandas transformations and orchestrating ETL via Apache Airflow into Snowflake. Deployed ML models for anomaly detection and forecasting, surfacing real-time insights through interactive dashboards.",
+  tags: [
+    { name: "Snowflake", color: "blue-text-gradient" },
+    { name: "ApacheAirflow", color: "green-text-gradient" },
+    { name: "Pandas", color: "pink-text-gradient" },
+    { name: "AnomalyDetection", color: "yellow-text-gradient" },
+    { name: "SQL", color: "red-text-gradient" },
+  ],
+  image: Business, // replace with actual screenshot
+  source_code_link: "https://github.com/snehasonkusare-tech/AI_BI_Pipeline_project/tree/main/ai_bi_pipeline_project",
+},
+{
+  name: "Dynamic Pricing Revenue Optimization",
+  description:
+    "Architected a pricing optimization pipeline in R using Prophet forecasting, price elasticity regression, and causal inference to support insight-driven decisions. Centralized data on Amazon Redshift and built real-time revenue simulation dashboards in Amazon QuickSight.",
+  tags: [
+    { name: "R", color: "blue-text-gradient" },
+    { name: "Prophet", color: "green-text-gradient" },
+    { name: "AmazonRedshift", color: "pink-text-gradient" },
+    { name: "QuickSight", color: "yellow-text-gradient" },
+    { name: "CausalInference", color: "red-text-gradient" },
+  ],
+  image: Dynamic, // replace with actual screenshot
+  source_code_link: "https://github.com/snehasonkusare-tech/Dynamic_Pricing_Revenue_Optimization",
+},
+{
+  name: "Bioinformatics Analytics Platform",
+  description:
+    "Optimized distributed workflows using Apache Spark, automating ETL and data validation pipelines in Python and SQL. Consolidated datasets into Google BigQuery and built Power BI dashboards with DAX queries to visualize genomic mutation trends.",
+  tags: [
+    { name: "ApacheSpark", color: "blue-text-gradient" },
+    { name: "BigQuery", color: "green-text-gradient" },
+    { name: "PowerBI", color: "pink-text-gradient" },
+    { name: "DAX", color: "yellow-text-gradient" },
+    { name: "Python", color: "red-text-gradient" },
+  ],
+  image: Bio, // replace with actual screenshot
+  source_code_link: "https://github.com/snehasonkusare-tech/bioinformatics-analytics-platform-one-container/tree/main/bioinformatics-analytics-platform-one-container",
+},
   {
     name: "BlinkIt",
     description:

@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile, rotation, scale, onHover }) => {
-  const { scene } = useGLTF("./desktop_pc/scene.gltf", true);
+  const { scene } = useGLTF("/Portfolio/desktop_pc/scene.gltf", true);
 
   // Check if the model is loaded
   if (!scene) {
