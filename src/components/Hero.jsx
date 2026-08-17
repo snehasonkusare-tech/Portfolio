@@ -16,7 +16,15 @@ const Hero = () => {
 
         {/* Right Side - Content */}
         <div>
-          <motion.h1 
+          <motion.p
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className='uppercase tracking-[4px] text-[#915eff] text-[14px] sm:text-[16px] font-semibold'
+          >
+            AI Engineer — LLM Inference &amp; MLOps
+          </motion.p>
+          <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -24,13 +32,13 @@ const Hero = () => {
           >
             Hi, I'm <span className='text-[#915eff]'>Sneha Sonkusare</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
             className={`${styles.heroSubText} mt-2 text-white-100`}
           >
-           I create data-driven solutions, predictive models, and interactive visualizations to turn complex data into insights
+           I build LLM/SLM inference platforms, agentic AI systems, and RAG pipelines — turning GPU-accelerated MLOps into production-grade AI
           </motion.p>
 
           {/* Social Media Icons Below the Text */}

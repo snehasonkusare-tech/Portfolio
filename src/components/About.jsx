@@ -42,7 +42,7 @@ const About = () => {
             variants={fadeIn(" ", " ", 0.1, 1)}
             className="mt-4 text-secondry text-[17px] max-w-3xl leading-[30px]"
           >
-            I’m a passionate Data Science professional with a strong foundation in Python, machine learning, and Analytics. I specialize in transforming complex data into actionable insights through predictive modeling, data visualization, and AI techniques. A quick learner, I’m dedicated to solving real-world problems and driving innovation. Let’s collaborate to turn data into meaningful solutions!
+            I'm an AI Engineer specializing in designing, fine-tuning, and deploying LLM/SLM inference platforms, agentic AI systems, and RAG pipelines; open-source contributor to PyTorch. I focus on parameter-efficient fine-tuning (LoRA, QLoRA, Unsloth), GPU-accelerated model serving on Kubernetes, and context engineering for production LLM applications — backed by end-to-end MLOps spanning observability, autoscaling, and AI governance. Currently building sovereign AI architecture for enterprise deployment. Let's build something intelligent together!
           </motion.p>
 
           {/* Resume Button */}

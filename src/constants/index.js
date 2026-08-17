@@ -83,19 +83,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Data Scientist",
-    icon: web,
-  },
-  {
-    title: "Machine Learning Enigneer",
-    icon: mobile,
-  },
-  {
     title: "AI Engineer",
     icon: backend,
   },
   {
-    title: "Data Analyst",
+    title: "MLOps Engineer",
+    icon: mobile,
+  },
+  {
+    title: "LLM / GenAI Engineer",
+    icon: web,
+  },
+  {
+    title: "Data Scientist",
     icon: creator,
   },
 ];
@@ -176,6 +176,19 @@ BigDataandCloud:[
 };
 
 const experiences = [
+  {
+    title: "AI Engineer Intern",
+    company_name: "Hexaware Technologies Inc.",
+    icon: Hexa,
+    iconBg: "#383E56",
+    date: "July 2026 - Present",
+    points: [
+      "Build and deploy enterprise RAG pipelines, Voice AI systems, and Co-pilot applications for sovereign AI architecture initiatives targeting enterprise deployment.",
+      "Run SLM fine-tuning experiments (LoRA/QLoRA, Unsloth) and benchmark performance on domain tasks across NVIDIA NIM and AWS Bedrock.",
+      "Develop Agentic AI proof-of-concepts, including multi-agent architectures, tool-use integrations, and context engineering strategies for reliable long-context reasoning.",
+      "Contribute to frontend development for AI-facing user interfaces, prioritizing latency and usability.",
+    ],
+  },
   {
     title: "Graduate Research Assistant",
     company_name: "UMass Dartmouth School for Marine Science and Technology",
